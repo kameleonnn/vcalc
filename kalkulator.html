@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+</head>
+
+<body id="appCont">
+    <div id="body" :class="{light: light}">
+        <button id="theme" v-on:click="theme" :class="{light: light}"></button>
+        <div id="app" :class="{light: light}">
+            <table>
+                <tr>
+                    <td id="display" :class="{light: light}" colspan="4">
+                        <span>{{disp}}</span>
+                    </td>
+                </tr>
+                <tr style="height: 5px;"></tr>
+                <tr>
+                    <td><button v-on:click="clear" id="clear" :class="{light: light}">clear</button></td>
+                    <td><button v-on:click="back" id="back" :class="{light: light}">⌫</button></td>
+                    <td><button v-on:click="root" class="op" :class="{light: light}">√</button></td>
+                    <td><button v-on:click="setOp('/')" name="div" class="op" :class="{light: light}">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button v-on:click="write(1)" :class="{light: light}">1</button></td>
+                    <td><button v-on:click="write(2)" :class="{light: light}">2</button></td>
+                    <td><button v-on:click="write(3)" :class="{light: light}">3</button></td>
+                    <td><button v-on:click="setOp('*')" name="multp" class="op" :class="{light: light}">×</button></td>
+                </tr>
+                <tr>
+                    <td><button v-on:click="write(4)" :class="{light: light}">4</button></td>
+                    <td><button v-on:click="write(5)" :class="{light: light}">5</button></td>
+                    <td><button v-on:click="write(6)" :class="{light: light}">6</button></td>
+                    <td><button v-on:click="setOp('-')" class="op" :class="{light: light}">−</button></td>
+                </tr>
+                <tr>
+                    <td><button v-on:click="write(7)" :class="{light: light}">7</button></td>
+                    <td><button v-on:click="write(8)" :class="{light: light}">8</button></td>
+                    <td><button v-on:click="write(9)" :class="{light: light}">9</button></td>
+                    <td><button v-on:click="setOp('+')" class="op" :class="{light: light}">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button v-on:click="write(0)" :class="{light: light}">0</button></td>
+                    <td><button v-on:click="point" :class="{light: light}">.</button></td>
+                    <td><button v-on:click="calc" id="calc" class="op" :class="{light: light}">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="script.js"></script>
+
+</html>

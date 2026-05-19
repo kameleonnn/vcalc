@@ -1,0 +1,141 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+body {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+#body.light {
+    background-color: rgb(153, 152, 150);
+}
+
+#app {
+    background-color: rgb(31, 31, 31);
+    box-shadow: 1px 1px 20px black, 1px 1px 10px inset rgb(70, 70, 70);
+    width: min-content;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+#app.light {
+    background-color: rgb(199, 196, 196);
+    box-shadow: 1px 1px 15px rgb(116, 116, 116), 1px 1px 10px inset #8c8484;
+}
+
+span {
+    margin-right: 10px;
+    font-family: 'Seven Segment', 'Courier New', Courier, monospace;
+    
+    font-size: 24pt;
+}
+
+td{
+    padding: 2px;
+}
+
+#display {
+    text-shadow: 0px 0px 3px rgba(207, 207, 207, 0.56);
+    box-shadow: 1px 1px 10px inset rgb(10, 10, 10);;
+    background-color: rgb(19, 18, 18);
+    color: rgb(169, 168, 173);
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#display.light {
+    box-shadow: 1px 1px 10px inset rgb(104, 104, 104);
+    text-shadow: 0px 0px 3px rgba(63, 63, 63, 0.87);
+    background-color: rgb(151, 147, 147);
+    color: rgb(39, 39, 39);
+}
+
+button#theme {
+    box-shadow: 1px 1px 3px inset rgb(22, 22, 22);
+    background-color: rgb(14, 13, 13);
+    height: 5px;
+    width: 15px;
+    margin-left: 25px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    border: 0px;
+}
+
+button#theme.light {
+    box-shadow: 1px 1px 3px inset rgb(138, 110, 135);
+    margin-left: 30px;
+    background-color: rgb(92, 76, 84);
+}
+
+#app button {
+    box-shadow: 2px 4px 7px inset #6a6363, -2px -4px 5px inset #2b2b2b, -1px -2px 5px #0f0d0d;
+    background-color: rgb(75, 73, 73);
+    /*border-color: rgb(54, 50, 52);*/
+    border-width: 0px;
+    color: rgb(218, 217, 220);
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 65px;
+    width: 100%;
+    min-height: 50px;
+    height: 100%;
+    font-weight: bold;
+}
+
+#app button.light {
+    box-shadow: 2px 4px 7px inset #948b8b, -2px -4px 5px inset #535353, 0px 0px 3px #363030;
+    background-color: rgb(134, 133, 133);
+    color: rgb(39, 39, 39);
+    /*border-color: rgb(165, 152, 159);*/
+}
+
+#app button.op {
+    box-shadow: 2px 4px 7px inset #7d6c71, -2px -4px 5px inset #45343a, -1px -2px 5px #0f0d0d;
+    background-color: rgb(92, 76, 84);
+}
+
+#app button.op.light {
+    box-shadow: 2px 4px 7px inset #bca8b2, -2px -4px 5px inset #705a61, 0px 0px 3px #524949;
+    background-color: rgb(166, 148, 163);
+}
+
+#app button#clear {
+    box-shadow: 2px 4px 7px inset #8a5237, -2px -4px 5px inset #47311e, -1px -2px 5px #0f0d0d;
+    background-color: rgb(138, 69, 14);
+}
+
+#app button#clear.light {
+    box-shadow: 2px 4px 7px inset #c4a492, -2px -4px 5px inset #826750, 0px 0px 3px #524949;
+    background-color: rgb(172, 133, 88);
+}
+
+#app button#back {
+    box-shadow: 2px 4px 7px inset #b18068, -2px -4px 5px inset #805540, -1px -2px 5px #0f0d0d;
+    background-color: rgb(170, 112, 64);
+}
+
+#app button#back.light {
+    box-shadow: 2px 4px 7px inset #e2c1ae, -2px -4px 5px inset #9c7e63, 0px 0px 3px #524949;
+    background-color: rgb(194, 163, 128);
+}
+
+#app button#calc {
+    box-shadow: 2px 4px 7px inset #58485f, -2px -4px 5px inset #2a1c2d, -1px -2px 5px #0f0d0d;
+    background-color: rgb(54, 46, 63);
+}
+
+#app button#calc.light {
+    box-shadow: 2px 4px 7px inset #c7b4da, -2px -4px 5px inset #5e4e6e, 0px 0px 3px #524949;
+    background-color: rgb(148, 137, 190);
+}
