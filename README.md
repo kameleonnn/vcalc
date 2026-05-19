@@ -1,5 +1,5 @@
 # vcalc
-## simple calculator writter with vue
+## simple calculator written with vue
 runs straight in the browser, no vue installation needed (requires internet connection)
 
 features:
