@@ -11,8 +11,9 @@ body {
     background-color: rgb(37, 37, 37);
     width: 100%;
     height: 100%;
-    padding-top: 25px;
-    padding-left: 25px;
+    padding-top: 100px;
+    padding-left: 40%;
+    align-self: center;
 }
 
 #body.light {
@@ -20,6 +21,7 @@ body {
 }
 
 #app {
+    scale: 1.5;
     background-color: rgb(31, 31, 31);
     box-shadow: 1px 1px 20px black, 1px 1px 10px inset rgb(70, 70, 70);
     width: min-content;

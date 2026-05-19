@@ -17,6 +17,8 @@ const app = Vue.createApp({
             this.float = 0;
             this.op = "";
             this.neg = false;
+            console.log("clear");
+            event.target.blur();
         },
         back() {
             if (this.float != 0) {
@@ -24,6 +26,7 @@ const app = Vue.createApp({
                 this.disp = (this.disp - (this.disp % this.float));
             } else { this.disp = (this.disp - (this.disp % 10)) / 10; }
             this.trim();
+            event.target.blur();
         },
         root() {
             this.disp = Math.sqrt(this.disp);
@@ -36,12 +39,14 @@ const app = Vue.createApp({
                 this.disp = this.disp + (num * this.float);
                 this.float = this.float / 10;
             }
+            event.target.blur();
         },
         point() {
             if (this.float == 0) {
                 this.disp = this.disp * 1.00;
                 this.float = 0.1;
             }
+            event.target.blur();
         },
         setOp(op) {
             if (this.disp == 0 && this.op == "-") { this.neg = true; }
@@ -52,6 +57,7 @@ const app = Vue.createApp({
                 this.float = 0;
                 this.neg = false;
             }
+            event.target.blur();
         },
         calc() {
             switch (this.op) {
